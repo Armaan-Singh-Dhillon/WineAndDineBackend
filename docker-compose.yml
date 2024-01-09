@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  mysql-container:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: armaan
+      MYSQL_DATABASE: armaan
+      MYSQL_USER: armaan
+      MYSQL_PASSWORD: armaan
+    ports:
+      - "3306:3306"
