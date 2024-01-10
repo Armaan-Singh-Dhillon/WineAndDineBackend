@@ -3,13 +3,13 @@ package com.armaan.wineanddinebackend.TypeClasses;
 public class Review {
     private String date;
     private String name;
-    private int rating;
+    private double rating;
     private String review;
 
     public Review() {
     }
 
-    public Review(String date, String name, int rating, String review) {
+    public Review(String date, String name, double rating, String review) {
         this.date = date;
         this.name = name;
         this.rating = rating;
@@ -32,11 +32,11 @@ public class Review {
         this.name = name;
     }
 
-    public int getRating() {
+    public double getRating() {
         return rating;
     }
 
-    public void setRating(int rating) {
+    public void setRating(double rating) {
         this.rating = rating;
     }
 
