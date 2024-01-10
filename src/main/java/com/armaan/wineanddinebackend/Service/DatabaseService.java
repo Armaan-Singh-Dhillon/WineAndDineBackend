@@ -6,12 +6,12 @@ import org.springframework.stereotype.Service;
 import com.armaan.wineanddinebackend.repository.DishRepository;
 
 @Service
-public class ServiceBasic {
+public class DatabaseService {
 
     public final DishRepository repository;
 
     @Autowired
-    public ServiceBasic(DishRepository repository) {
+    public DatabaseService(DishRepository repository) {
         this.repository = repository;
     }
 

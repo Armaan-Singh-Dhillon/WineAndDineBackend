@@ -1,0 +1,166 @@
+{
+    "averageTimeToCook": 15,
+    "deliveryTime": 30,
+    "description": "Introducing the Butter Chicken - a delicious and flavorful dish made with tender chicken cooked in a rich and creamy tomato-based sauce. It is seasoned with a blend of aromatic spices and served with fragrant basmati rice. Indulge in this classic Indian dish that is sure to satisfy your taste buds.",
+    "fatContent": 20,
+    "image": "https://firebasestorage.googleapis.com/v0/b/wine-and-dine-7297b.appspot.com/o/dishes%2Fbutter-chicken.jpg?alt=media&token=a1d4b363-d368-4f87-9707-c0862076eac0",
+    "ingredients": {
+        "cheese": [
+            {
+                "description": "Parmesan Reggiano is a hard, dry, fruity, and nutty-flavored cheese made from raw skimmed milk of cows. It is commonly used as a grating cheese.",
+                "name": "Parmesan Reggiano"
+            },
+            {
+                "description": "Feta is a brined cheese produced with unpasteurized or pasteurized milk. It has a tangy flavor and crumbly texture, often used in salads and Greek cuisine.",
+                "name": "Feta"
+            }
+        ],
+        "herbs": [
+            {
+                "description": "This fragrant Georgian spice is mixed with fenugreek, marigold petals, coriander, black pepper, dill, mint, and bay leaf. It has warm, bitter, nutty, and grassy flavors.",
+                "name": "Khmeli Suneli"
+            },
+            {
+                "description": "Basil is a versatile herb that goes well with baked fish, tomatoes, and tomato salads. It adds freshness and flavor to dishes.",
+                "name": "Basil"
+            }
+        ],
+        "spices": [
+            {
+                "description": "Pimentón de la Vera is a smoked paprika made by crushing dried peppers into a fragrant and smoky powder. It adds a unique flavor to various dishes.",
+                "name": "Pimentón de la Vera"
+            }
+        ]
+    },
+    "name": "Butter Chicken",
+    "options": {
+        "sauce": [
+            "Sweet chili sauce",
+            "Fish sauce",
+            "Soy sauce"
+        ],
+        "spiceLevel": [
+            "Mild",
+            "Medium",
+            "Spicy"
+        ],
+        "toppings": [
+            "Extra veggies",
+            "Fried egg",
+            "Crushed peanuts"
+        ]
+    },
+    "price": 12,
+    "protein": 14,
+    "reviews": {
+        "averageRating": 4.5,
+        "customerReviews": [
+            {
+                "date": "2023-06-01",
+                "name": "John Smith",
+                "rating": 5,
+                "review": "Absolutely delicious! The perfect balance of flavors. The chicken was tender, and the spiciness was just right."
+            },
+            {
+                "date": "2023-05-28",
+                "name": "Emily Johnson",
+                "rating": 4,
+                "review": "I enjoyed the dish, especially the aromatic basil. It had a good level of spiciness, and the chicken was cooked well."
+            },
+            {
+                "date": "2023-05-25",
+                "name": "Michael Davis",
+                "rating": 4.5,
+                "review": "Great dish! The flavors were authentic, and the portion size was generous. Will definitely order again."
+            },
+            {
+                "date": "2023-05-20",
+                "name": "Sarah Thompson",
+                "rating": 3.5,
+                "review": "The dish had good flavor, but it was slightly too spicy for my taste. The chicken could have been more tender."
+            },
+            {
+                "date": "2023-05-15",
+                "name": "David Wilson",
+                "rating": 5,
+                "review": "This dish was outstanding! The flavors were bold and well-balanced. Definitely a must-try."
+            },
+            {
+                "date": "2023-06-29",
+                "name": "armaan",
+                "email": "himom@gmail.com",
+                "id": "n2BjVYuimvYBv1eqOl20O7fAIyN2",
+                "review": "very rich in spices",
+                "dishName": "Spicy Thai Basil Chicken"
+            }
+        ],
+        "totalReviews": 6
+    },
+    "salesAndOffers": [
+        {
+            "description": "Enjoy discounted prices on select drinks and appetizers during our daily happy hour.",
+            "endDate": "2023-06-30",
+            "startDate": "2023-06-15",
+            "title": "Happy Hour Special"
+        },
+        {
+            "description": "Join us for our weekend brunch and get 20% off your total bill from 9 AM to 12 PM.",
+            "endDate": "2023-07-31",
+            "startDate": "2023-07-01",
+            "title": "Weekend Brunch Deal"
+        },
+        {
+            "description": "Sign up for our loyalty program and earn points for every purchase. Redeem points for exclusive discounts and rewards.",
+            "endDate": "2023-12-31",
+            "startDate": "2023-06-01",
+            "title": "Loyalty Program"
+        },
+        {
+            "description": "Bring your family and enjoy a special 3-course meal package at a discounted price every Sunday.",
+            "endDate": "2023-09-30",
+            "startDate": "2023-06-20",
+            "title": "Family Special"
+        }
+    ],
+    "supplements": {
+        "beverages": [
+            {
+                "description": "A refreshing citrus drink made with freshly squeezed lemons and a hint of sweetness. Perfect for quenching your thirst.",
+                "name": "Lemonade"
+            },
+            {
+                "description": "A classic chilled tea beverage infused with flavors like lemon, peach, or mint. It provides a cool and soothing sensation.",
+                "name": "Iced Tea"
+            },
+            {
+                "description": "Bubbly and effervescent, sparkling water provides a crisp and clean taste that pairs well with any meal. A refreshing choice.",
+                "name": "Sparkling Water"
+            }
+        ],
+        "foodDrinks": [
+            {
+                "description": "A comforting and warm liquid dish made with a variety of ingredients like vegetables, meat, or seafood. Perfect as a starter or light meal.",
+                "name": "Soup"
+            },
+            {
+                "description": "A creamy and blended beverage made with fruits, yogurt, and sometimes additional ingredients like spinach or protein powder. Offers a nutritious and refreshing option.",
+                "name": "Smoothie"
+            },
+            {
+                "description": "A non-alcoholic cocktail that combines various fruit juices, sodas, and garnishes to create a flavorful and visually appealing drink. Perfect for those who prefer alcohol-free options.",
+                "name": "Mocktail"
+            }
+        ]
+    },
+    "tags": [
+        "flavorful",
+        "spicy",
+        "aromatic",
+        "oily",
+        "fried",
+        "healthy",
+        "lowsugar",
+        "highsugar"
+    ],
+    "type": "main course"
+}

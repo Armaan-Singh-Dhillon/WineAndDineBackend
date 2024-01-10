@@ -13,15 +13,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.armaan.wineanddinebackend.Entity.Dish;
-import com.armaan.wineanddinebackend.Service.ServiceBasic;
+import com.armaan.wineanddinebackend.Service.DatabaseService;
 
 @RestController
 @RequestMapping("/api/yourEntities")
-public class Basic {
-    private final ServiceBasic service;
+public class DishController {
+    private final DatabaseService service;
 
     @Autowired
-    public Basic(ServiceBasic service) {
+    public DishController(DatabaseService service) {
         this.service = service;
     }
 
