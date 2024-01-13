@@ -34,6 +34,10 @@ public class Dish {
     @JsonManagedReference
     private List<Ingredient> ingredients;
 
+    @OneToOne
+    @JoinColumn(name = "supplement_id")
+    private Supplement supplement;
+
     // Real Relations
 
 }
