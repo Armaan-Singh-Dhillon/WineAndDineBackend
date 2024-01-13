@@ -23,7 +23,7 @@ public class DishController {
 
     @GetMapping("/")
     public List<Dish> getEntityById() {
-        List<Dish> entity = service.repository.findAll();
+        List<Dish> entity = service.dishRepository.findAll();
         return entity;
     }
 

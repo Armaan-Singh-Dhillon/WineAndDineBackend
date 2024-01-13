@@ -37,6 +37,9 @@ public class Dish {
     @OneToOne
     @JoinColumn(name = "supplement_id")
     private Supplement supplement;
+    @OneToOne
+    @JoinColumn(name = "review_id")
+    private Review review;
 
     // Real Relations
 
