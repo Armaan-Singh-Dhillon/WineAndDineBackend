@@ -1,3 +1,3 @@
-## Database design and Structure
+## Database Schema and Structure
 
 ![Alt text](WineAndDineBackend.jpg)
