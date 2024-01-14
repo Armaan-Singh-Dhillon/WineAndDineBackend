@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.armaan.wineanddinebackend.Entity.Dish;
+import com.armaan.wineanddinebackend.Entity.blogPackage.Blog;
+import com.armaan.wineanddinebackend.Entity.dish.Dish;
 import com.armaan.wineanddinebackend.Service.DatabaseService;
 
 @RestController
@@ -19,6 +20,12 @@ public class DishController {
     @Autowired
     public DishController(DatabaseService service) {
         this.service = service;
+    }
+
+    @GetMapping("/blog")
+    public List<Blog> getBlogById() {
+        List<Blog> entity = service.blogRepository.findAll();
+        return entity;
     }
 
     @GetMapping("/")

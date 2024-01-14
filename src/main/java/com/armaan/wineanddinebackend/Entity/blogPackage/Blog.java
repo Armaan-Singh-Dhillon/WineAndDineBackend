@@ -1,7 +1,9 @@
-package com.armaan.wineanddinebackend.Entity;
+package com.armaan.wineanddinebackend.Entity.blogPackage;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import lombok.Data;
 
 @Entity
@@ -29,5 +31,8 @@ public class Blog {
     private String writerName;
     private String date;
     private String restaurantName;
+    @OneToOne
+    @JoinColumn(name = "blog_review_id")
+    private BlogReview blogReview;
 
 }

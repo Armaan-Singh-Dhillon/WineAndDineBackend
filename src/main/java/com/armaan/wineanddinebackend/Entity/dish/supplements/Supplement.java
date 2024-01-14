@@ -1,4 +1,4 @@
-package com.armaan.wineanddinebackend.Entity;
+package com.armaan.wineanddinebackend.Entity.dish.supplements;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 

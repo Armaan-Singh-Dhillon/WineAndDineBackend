@@ -1,8 +1,11 @@
-package com.armaan.wineanddinebackend.Entity;
+package com.armaan.wineanddinebackend.Entity.dish;
 
 import java.util.List;
 
-import com.armaan.wineanddinebackend.TypeClasses.Ingredient;
+import com.armaan.wineanddinebackend.Entity.dish.ingredient.Ingredient;
+import com.armaan.wineanddinebackend.Entity.dish.review.Review;
+import com.armaan.wineanddinebackend.Entity.dish.sales.SalesAndOffers;
+import com.armaan.wineanddinebackend.Entity.dish.supplements.Supplement;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import jakarta.persistence.CascadeType;
@@ -40,6 +43,9 @@ public class Dish {
     @OneToOne
     @JoinColumn(name = "review_id")
     private Review review;
+    @OneToOne
+    @JoinColumn(name = "sales_and_offer_id")
+    private SalesAndOffers salesAndOffers;
 
     // Real Relations
 

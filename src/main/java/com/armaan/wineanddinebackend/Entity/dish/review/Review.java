@@ -1,4 +1,4 @@
-package com.armaan.wineanddinebackend.Entity;
+package com.armaan.wineanddinebackend.Entity.dish.review;
 
 import java.util.List;
 

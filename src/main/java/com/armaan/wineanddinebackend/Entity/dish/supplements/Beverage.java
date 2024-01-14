@@ -1,6 +1,5 @@
-package com.armaan.wineanddinebackend.TypeClasses;
+package com.armaan.wineanddinebackend.Entity.dish.supplements;
 
-import com.armaan.wineanddinebackend.Entity.Dish;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import jakarta.persistence.Entity;
@@ -11,15 +10,14 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Ingredient {
+public class Beverage {
     @Id
-    private int ingredient_id;
-    private String name;
+    private int beverageId;
     private String description;
-    private String category;
+    private String name;
     @ManyToOne
-    @JoinColumn(name = "dish_id")
+    @JoinColumn(name = "supplement_id")
     @JsonBackReference
-    private Dish dish;
+    private Supplement supplement;
 
 }
