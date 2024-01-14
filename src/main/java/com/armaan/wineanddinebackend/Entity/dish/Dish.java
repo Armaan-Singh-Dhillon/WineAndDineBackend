@@ -3,10 +3,10 @@ package com.armaan.wineanddinebackend.Entity.dish;
 import java.util.List;
 
 import com.armaan.wineanddinebackend.Entity.dish.ingredient.Ingredient;
+import com.armaan.wineanddinebackend.Entity.dish.options.Options;
 import com.armaan.wineanddinebackend.Entity.dish.review.Review;
 import com.armaan.wineanddinebackend.Entity.dish.sales.SalesAndOffers;
 import com.armaan.wineanddinebackend.Entity.dish.supplements.Supplement;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.ElementCollection;
@@ -14,7 +14,6 @@ import jakarta.persistence.Entity;
 
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import lombok.Data;
 
@@ -34,10 +33,9 @@ public class Dish {
     private int protein;
     private String type;
 
-    @OneToMany(mappedBy = "dish", cascade = CascadeType.ALL)
-    @JsonManagedReference
-    private List<Ingredient> ingredients;
     // Real Relations
+    @ElementCollection
+    private List<Ingredient> ingredients;
 
     @OneToOne
     @JoinColumn(name = "supplement_id")
@@ -51,5 +49,8 @@ public class Dish {
 
     @ElementCollection
     private List<String> tags;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private Options options;
 
 }
