@@ -9,6 +9,7 @@ import com.armaan.wineanddinebackend.Entity.dish.supplements.Supplement;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import jakarta.persistence.CascadeType;
+import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 
 import jakarta.persistence.Id;
@@ -36,6 +37,7 @@ public class Dish {
     @OneToMany(mappedBy = "dish", cascade = CascadeType.ALL)
     @JsonManagedReference
     private List<Ingredient> ingredients;
+    // Real Relations
 
     @OneToOne
     @JoinColumn(name = "supplement_id")
@@ -47,6 +49,7 @@ public class Dish {
     @JoinColumn(name = "sales_and_offer_id")
     private SalesAndOffers salesAndOffers;
 
-    // Real Relations
+    @ElementCollection
+    private List<String> tags;
 
 }
