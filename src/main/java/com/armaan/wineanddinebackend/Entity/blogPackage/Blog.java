@@ -31,6 +31,7 @@ public class Blog {
     private String writerName;
     private String date;
     private String restaurantName;
+
     @OneToOne
     @JoinColumn(name = "blog_review_id")
     private BlogReview blogReview;
