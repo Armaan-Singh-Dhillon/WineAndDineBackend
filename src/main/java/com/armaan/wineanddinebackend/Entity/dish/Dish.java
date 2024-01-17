@@ -36,9 +36,9 @@ public class Dish {
     // private int protein;
     private String type;
 
-    // @OneToMany(mappedBy = "dish", cascade = CascadeType.ALL)
-    // @JsonManagedReference
-    // private List<Ingredient> ingredients;
+    @OneToMany(mappedBy = "dish", cascade = CascadeType.ALL)
+    @JsonManagedReference
+    private List<Ingredient> ingredients;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "supplement_id")
