@@ -1,6 +1,7 @@
 package com.armaan.wineanddinebackend.Entity.dish.supplements;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -15,7 +16,7 @@ import lombok.Data;
 public class Beverage {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
+    @JsonIgnore
     private int beverageId;
     private String description;
     private String name;

@@ -9,10 +9,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+
 import org.springframework.web.bind.annotation.RestController;
 
-import com.armaan.wineanddinebackend.Entity.blogPackage.Blog;
 import com.armaan.wineanddinebackend.Entity.dish.Dish;
 import com.armaan.wineanddinebackend.Service.DatabaseService;
 
@@ -24,12 +23,6 @@ public class DishController {
     @Autowired
     public DishController(DatabaseService service) {
         this.service = service;
-    }
-
-    @GetMapping("/blog")
-    public List<Blog> getBlogById() {
-        List<Blog> entity = service.blogRepository.findAll();
-        return entity;
     }
 
     @GetMapping("/")

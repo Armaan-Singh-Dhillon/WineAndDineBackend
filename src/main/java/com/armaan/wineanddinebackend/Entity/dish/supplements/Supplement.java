@@ -1,5 +1,6 @@
 package com.armaan.wineanddinebackend.Entity.dish.supplements;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import jakarta.persistence.CascadeType;
@@ -16,11 +17,12 @@ import java.util.List;
 public class Supplement {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonIgnore
     private int supplementId;
-    @OneToMany(mappedBy = "supplement", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "supplement", cascade = CascadeType.ALL)
     @JsonManagedReference
     private List<Beverage> beverages;
-    @OneToMany(mappedBy = "supplement", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "supplement", cascade = CascadeType.ALL)
     @JsonManagedReference
     private List<FoodDrink> foodDrinks;
 

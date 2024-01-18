@@ -43,9 +43,9 @@ public class Dish {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "supplement_id")
     private Supplement supplement;
-    // @OneToOne
-    // @JoinColumn(name = "review_id")
-    // private Review review;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "review_id")
+    private Review review;
     // @OneToOne
     // @JoinColumn(name = "sales_and_offer_id")
     // private SalesAndOffers salesAndOffers;
